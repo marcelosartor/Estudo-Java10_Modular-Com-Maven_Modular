@@ -1,0 +1,3 @@
+module-info.class
+br/com/casadocodigo/domain/Book.class
+br/com/casadocodigo/domain/Category.class
