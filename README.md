@@ -1,13 +1,13 @@
-Introdução
+# Introdução
 Este projeto é uma adaptação do excercício do livro:
 Java 9
 Interativo, reativo e modularizado
 Rodrigo Turini
 
-Objetivo:
+## Objetivo:
 Estudar o sistema de modulos do java 10 com o sistema de modulos do Maven
 
-Esta dividido nos seguintes modulos:
+#### Esta dividido nos seguintes modulos:
 
 bookstore
 | domain
@@ -15,14 +15,14 @@ bookstore
 | nf
 | app 
  
-Problema:
+## Problema:
 
 ao compilar o projeto 
-
+```
 mvn install -Dmaven.test.skip=true
-
+```
 ocorre um erro no compilacao no modulo http.
-
+```
 [INFO] Reactor Summary:
 [INFO] 
 [INFO] bookstore 1.0.0 .................................... SUCCESS [  0.287 s]
@@ -36,4 +36,4 @@ ocorre um erro no compilacao no modulo http.
 [INFO] Total time: 1.750 s
 [INFO] Finished at: 2018-05-20T16:52:13-03:00
 [INFO] ------------------------------------------------------------------------
-  
+```  
