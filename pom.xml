@@ -43,7 +43,8 @@
                 </configuration>
             </plugin>
         
-<!--             <plugin>
+	   <!--
+           <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
@@ -59,22 +60,23 @@
                     </execution>
                 </executions>
             </plugin>
- -->            
+
+            <plugin>
+	      <groupId>org.apache.maven.plugins</groupId>
+	      <artifactId>maven-jar-plugin</artifactId>
+	      <configuration>
+	        <archive>
+	          <manifest>
+	            <mainClass>${start-class}</mainClass>
+	          </manifest>
+	        </archive>
+	      </configuration>
+	    </plugin>
+ 	-->						
         </plugins>
     </build>
   	            
-<!-- 	            <plugin>
-			      <groupId>org.apache.maven.plugins</groupId>
-			      <artifactId>maven-jar-plugin</artifactId>
-			      <configuration>
-			        <archive>
-			          <manifest>
-			            <mainClass>${start-class}</mainClass>
-			          </manifest>
-			        </archive>
-			      </configuration>
-			    </plugin>
- -->				
+
 			
   
 </project>
