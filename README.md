@@ -1,5 +1,5 @@
 # Introdução
-Este projeto é uma adaptação do excercício do livro:
+Este projeto é uma adaptação do exercício do livro:
 Java 9
 Interativo, reativo e modularizado
 Rodrigo Turini
