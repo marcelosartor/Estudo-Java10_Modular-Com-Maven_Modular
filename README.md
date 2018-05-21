@@ -22,7 +22,7 @@ ao compilar o projeto
 ```
 mvn install -Dmaven.test.skip=true
 ```
-ocorre um erro no compilacao no modulo http.
+ocorre um erro na compilacao no modulo http conforme abaixo. 
 ```
 [INFO] Reactor Summary:
 [INFO] 
