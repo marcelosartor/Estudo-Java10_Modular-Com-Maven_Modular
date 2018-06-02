@@ -6,6 +6,7 @@ import java.util.stream.IntStream;
 
 import br.com.casadocodigo.domain.Book;
 import br.com.casadocodigo.http.Books;
+import br.com.casadocodigo.service.NFEmissor;
 
 
 public class MainMavenModulo {

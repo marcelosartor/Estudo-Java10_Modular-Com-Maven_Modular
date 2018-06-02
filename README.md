@@ -1,39 +1,35 @@
-Introdução
-Este projeto é uma adaptação do excercício do livro:
+# Introdução
+Este projeto é uma adaptação do exercício do livro:
 Java 9
 Interativo, reativo e modularizado
 Rodrigo Turini
 
-Objetivo:
+## Objetivo:
 Estudar o sistema de modulos do java 10 com o sistema de modulos do Maven
 
-Esta dividido nos seguintes modulos:
-
+#### Esta dividido nos seguintes modulos:
+``` 
 bookstore
 | domain
 | http
 | nf
 | app 
- 
-Problema:
+```
 
-ao compilar o projeto 
+## Problema:
 
-mvn install -Dmaven.test.skip=true
+ao executar o projeto  
+```
+java -jar app/target/app-1.0.0.jar
+```
+ocorre o seguite erro. 
+```
+Exception in thread "main" java.lang.NoClassDefFoundError: br/com/casadocodigo/http/Books
+	at br.com.casadocodigo.MainMavenModulo.main(MainMavenModulo.java:16)
+Caused by: java.lang.ClassNotFoundException: br.com.casadocodigo.http.Books
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
+	... 1 more
 
-ocorre um erro no compilacao no modulo http.
-
-[INFO] Reactor Summary:
-[INFO] 
-[INFO] bookstore 1.0.0 .................................... SUCCESS [  0.287 s]
-[INFO] domain ............................................. SUCCESS [  1.307 s]
-[INFO] http ............................................... FAILURE [  0.026 s]
-[INFO] nf ................................................. SKIPPED
-[INFO] app 1.0.0 .......................................... SKIPPED
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 1.750 s
-[INFO] Finished at: 2018-05-20T16:52:13-03:00
-[INFO] ------------------------------------------------------------------------
-  
+```  

@@ -1,0 +1,6 @@
+br/com/casadocodigo/model/NF.class
+br/com/casadocodigo/service/NFEmissor.class
+br/com/casadocodigo/service/WSPrefeitura.class
+br/com/casadocodigo/service/NFSubscriber.class
+module-info.class
+br/com/casadocodigo/service/NFFilterProcessor.class
