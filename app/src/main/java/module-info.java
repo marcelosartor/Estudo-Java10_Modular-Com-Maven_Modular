@@ -1,10 +1,3 @@
-/**
- * 
- */
-/**
- * @author msartor
- *
- */
 module app {
 	exports br.com.casadocodigo;
 

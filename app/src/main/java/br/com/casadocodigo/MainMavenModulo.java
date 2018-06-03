@@ -5,14 +5,26 @@ import java.util.Scanner;
 import java.util.stream.IntStream;
 
 import br.com.casadocodigo.domain.Book;
+import br.com.casadocodigo.domain.Category;
 import br.com.casadocodigo.http.Books;
 import br.com.casadocodigo.service.NFEmissor;
 
 
 public class MainMavenModulo {
-
-	public static void main(String[] args) {
+	
+	/*public static void main(String[] args) {
+		System.out.println("****** Passo 1 *******");
+		System.out.println("Sem modulos");
 		
+
+		Book livro_1 = new Book("Libro teste1", "Author teste1", Category.AGILE);
+		System.out.println("Passo 2");
+		System.out.println("Modulo domain");
+		
+	}
+*/
+	public static void main(String[] args) {
+				
 		List<Book> books = Books.all();
 		
 		IntStream
@@ -50,4 +62,9 @@ public class MainMavenModulo {
 
 	}
 
+/*	private static List<Book> criaListas() {
+		List<Book> retorno  
+		return null;
+	}
+*/
 }

@@ -15,22 +15,9 @@ bookstore
 | nf
 | app 
 ```
-## Problema:
-
-ao executar o projeto  
+## Executar:
+  
 ```
-java -jar app/target/app-1.0.0.jar
-```
-ocorre o seguite erro. 
-```
-Exception in thread "main" java.lang.NoClassDefFoundError: br/com/casadocodigo/http/Books
-	at br.com.casadocodigo.MainMavenModulo.main(MainMavenModulo.java:16)
-Caused by: java.lang.ClassNotFoundException: br.com.casadocodigo.http.Books
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:190)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:499)
-	... 1 more
+java --module-path mods -m app/br.com.casadocodigo.MainMavenModulo 
 
-=======
-
-```  
+``` 
